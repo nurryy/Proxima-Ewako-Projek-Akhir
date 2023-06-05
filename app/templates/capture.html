@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<!-- Judul Halaman -->
+	<title>Orbit Future Academy</title>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Icon -->
+	<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href={{ url_for('static', filename='/css/bootstrap.min.css') }} type="text/css">
+	<link rel="stylesheet" href={{ url_for('static', filename='/css/client_side.css') }}  type="text/css">
+	
+	<!-- JavaScript -->
+	<script src={{ url_for('static', filename='/js/jquery_3.6.0.min.js') }} ></script>
+	<script src={{ url_for('static', filename='/js/bootstrap_3.4.1.min.js') }} ></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Cataract Eye, Welcome to CataractEye, Upload Gambar, Hasil Prediksi, Info, Our Team">
+    <meta name="description" content="">
+    <title>PROXIMA EWAKO - Deteksi Katarak Pada Mata</title>
+    <link rel="stylesheet"  href={{ url_for('static', filename='/css/nicepage.css') }} media="screen">
+    <link rel="stylesheet" href={{ url_for('static', filename='/css/Home.css') }} media="screen">
+    <script class="u-script" type="text/javascript" src={{ url_for('static', filename='/js/jquery.js') }} defer=""></script>
+    <script class="u-script" type="text/javascript" src={{ url_for('static', filename='/js/nicepage.js') }} defer=""></script>
+    <meta name="generator" content="Nicepage 5.11.2, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i">
+    <!-- JavaScript -->
+    <script src={{ url_for('static', filename='/js/jquery_3.6.0.min.js') }} ></script>
+    <script src={{ url_for('static', filename='/js/bootstrap_3.4.1.min.js') }} ></script>
+    <link rel="stylesheet" href={{ url_for('static', filename='/css/bootstrap.min.css') }} type="text/css">
+	<link rel="stylesheet" href={{ url_for('static', filename='/css/client_side.css') }}  type="text/css">
+    
+    <style>
+		video {
+			display: block;
+			width: 420px;
+			height: 240px;
+		}
+		canvas {
+			display: block;
+			margin: 10px;
+			border: 1px solid black;
+		}
+		</style>
+</head>
+
+<body id="halamanku" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+	<a href="http://localhost:5000/proxima-ewako" class="u-image u-logo u-image-1" data-image-width="347" data-image-height="94">
+        <img src={{ url_for('static', filename='/images/Cloudy4.png') }} class="u-logo-image u-logo-image-1">
+      </a>
+      <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
+        <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px; text-transform: uppercase; font-weight: 500;">
+          <a class="u-button-style u-custom-active-color u-custom-border u-custom-border-color u-custom-hover-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
+            <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><symbol id="menu-hamburger" viewBox="0 0 16 16" style="width: 16px; height: 16px;"><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</symbol>
+</defs></svg>
+          </a>
+        </div>
+        <div class="u-custom-menu u-nav-container">
+          <ul class="u-nav u-spacing-2 u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-active-palette-1-base u-border-active-grey-90 u-border-hover-grey-50 u-border-no-left u-border-no-right u-border-no-top u-button-style u-hover-palette-1-light-1 u-nav-link u-text-active-white u-text-grey-90 u-text-hover-white" href="#carousel_60b7" style="padding: 10px 20px;">Aplikasi</a>
+</li><li class="u-nav-item"><a class="u-active-palette-1-base u-border-active-grey-90 u-border-hover-grey-50 u-border-no-left u-border-no-right u-border-no-top u-button-style u-hover-palette-1-light-1 u-nav-link u-text-active-white u-text-grey-90 u-text-hover-white" href="#carousel_e8f9" style="padding: 10px 20px;">Info</a>
+</li><li class="u-nav-item"><a class="u-active-palette-1-base u-border-active-grey-90 u-border-hover-grey-50 u-border-no-left u-border-no-right u-border-no-top u-button-style u-hover-palette-1-light-1 u-nav-link u-text-active-white u-text-grey-90 u-text-hover-white" href="#sec-b939" style="padding: 10px 20px;">Team</a>
+</li></ul>
+        </div>
+        <div class="u-custom-menu u-nav-container-collapse">
+          <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+            <div class="u-sidenav-overflow">
+              <div class="u-menu-close"></div>
+              <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#arousel_1118">Aplikasi</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#carousel_e8f9">Info</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#sec-b939">Team</a>
+</li></ul>
+            </div>
+          </div>
+          <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+        </div>
+      </nav>
+
+	<!-- Bagian Halaman (Informasi) -->
+	<div id="informasi" class="container-fluid">
+		<br>
+		<br>
+		<div class="row">
+			<div class="col-sm-6">
+				<h2>CIC</h2>
+				<h4>Cifar-10 Image Classification</h4><br>
+				<p style="text-align: justify;text-justify: inter-word;">
+					Aplikasi ini dibuat khusus untuk mendeteksi sebuah objek dari gambar yang diberikan.
+					Adapun dataset yang digunakan untuk model klasifikasi gambar ini adalah CIFAR-10. 
+					Pada dataset CIFAR-1, terdapat 10 objek yang dapat diklasifikasi yaitu pesawat, mobil, burung, kucing,
+					rusa, anjing, katak, kuda, kapal, dan truk.
+					Untuk dapat menggunakan aplikasi ini, pengguna hanya mengunggah sebuah gambar dengan format 'JPG'. 
+					Hasil deteksi objek akan ditampilkan setelah pengguna mengunggah gambar tersebut.
+				</p>
+				<br>
+
+				<!-- Tombol Mulai -->
+				<nav id="navgo" class="navbar" style="background-color:#ffffff;z-index: 0;">
+					<ul class="nav nav-pills">
+						<li class="nav-item">
+							<a class="btn btn-default btn-lg" href="#aplikasi" style="background-color:#28ace5">Mulai</a>
+						</li>
+					</ul>
+				</nav>
+
+			</div>
+			<div class="col-sm-6">
+				<br>
+				<br>
+				<!-- Gambar Deskripsi Aplikasi -->
+				<div align="center">
+					<img src={{ url_for('static', filename='/images/app-display.JPG') }} height="300" ></img>
+				</div>
+			</div>
+		</div>
+		<br>
+	</div>
+
+
+	<!-- Bagian Halaman (Aplikasi) -->
+	<div id="aplikasi" data-bs-spy="scroll" data-bs-target="#navgo" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+		<br>
+		<br>
+		<div class="row">
+			<div class="col-sm-6">
+				</br>
+				<h3 style="margin-left: 50px;">Upload Gambar </h3>
+					<form style="margin-left: 50px;">
+
+						<video id="player" controls autoplay></video> <br>
+						<canvas id="canvas" width="380" height="240"></canvas>
+						<button id="capture">Capture</button>
+						<button id="downloadButton">Save</button>						>
+						
+						<!-- Input atau Upload Gambar dari Pengguna -->
+						<img src={{ url_for('static', filename='/images/ex-upload.JPG') }} width="300" ></img>
+						<p>silahkan upload sebuah gambar</p>
+						<p>
+							<input type="file" id="input_gambar" name="file">
+						</p>
+						</br>
+						<!-- Tombol Prediksi -->
+						<button type="submit" id="prediksi_submit" class="btn btn-default btn-lg">Prediksi</button>
+						<script>
+							// Ambil elemen video, tombol, canvas, dan img
+							const player = document.getElementById("player");
+							const captureButton = document.getElementById("capture");
+							const canvas = document.getElementById("canvas");
+							const restartButton = document.getElementById("restart");
+							const context = canvas.getContext('2d');
+							const photo = document.getElementById("photo");
+							var downloadButton = document.getElementById("downloadButton");
+							const constraints = {
+											video: true,
+										};
+					
+							captureButton.addEventListener('click', () => {
+								context.drawImage(player, 0, 0, canvas.width, canvas.height);
+								var dataURL = canvas.toDataURL("image/jpeg", 1.0); // Menyimpan gambar dalam format JPEG
+								photo.setAttribute("src", dataURL);
+								downloadButton.disabled = false; // Aktifkan tombol Download
+					
+								// Stop all video streams.
+								player.srcObject.getVideoTracks().forEach(track => track.stop());
+							});
+							
+					
+							navigator.mediaDevices.getUserMedia(constraints).then((stream) => {
+								// Attach the video stream to the video element and autoplay.
+								player.srcObject = stream;
+							});
+					
+					
+							// Handler untuk tombol Download
+							downloadButton.addEventListener("click", function() {
+								// Mengubah data gambar dalam format base64 menjadi blob
+								var dataURL = canvas.toDataURL("image/jpeg", 1.0); // Menyimpan gambar dalam format JPEG
+								var blob = dataURLtoBlob(dataURL);
+					
+								// Buat objek URL untuk file blob dan buka jendela unduh
+								var url = URL.createObjectURL(blob);
+								var a = document.createElement("a");
+								a.href = url;
+								a.download = "captured-image.jpg";
+								document.body.appendChild(a);
+								a.click();
+								document.body.removeChild(a);
+								URL.revokeObjectURL(url);
+							});
+					
+							// Fungsi untuk mengubah data gambar dalam format base64 menjadi blob
+							function dataURLtoBlob(dataURL) {
+								var binary = atob(dataURL.split(',')[1]);
+								var array = [];
+								for (var i = 0; i < binary.length; i++) {
+									array.push(binary.charCodeAt(i));
+								}
+								return new Blob([new Uint8Array(array)], { type: 'image/jpeg' });
+							}
+						</script>
+					</form>
+			</div>
+			<div class="col-sm-6">
+				<br>
+				<!-- Bagian Halaman untuk Hasil Prediksi -->
+				<div id="hasil_prediksi" align="center">
+					<!-- Hasil Prediksi akan ditampilkan di sini-->
+				</div>
+			</div>
+		</div>
+		</br>
+		</br>
+		</br>
+		</br>
+	</div>
+
+	<!-- Bagian Halaman (Anggota Kelompok) -->
+	<div id="anggotaKelompok" class="container-fluid text-center">
+		<br>
+		<h2>ANGGOTA KELOMPOK</h2>
+		<h4>Tim Deployment dan Tim CV</h4>
+		<br>
+		<div class="row slideanim">
+			<div class="col-sm-4">
+				<span class="glyphicon glyphicon-user logo-small"></span>
+				<h4>BUDI</h4>
+				<p>Universitas Sumatera</p>
+			</div>
+			<div class="col-sm-4">
+				<span class="glyphicon glyphicon-user logo-small"></span>
+				<h4>AYU</h4>
+				<p>Universitas Jawa dan Bali</p>
+			</div>
+			<div class="col-sm-4">
+				<span class="glyphicon glyphicon-user logo-small"></span>
+				<h4>TONO</h4>
+				<p>Universitas Kalimantan</p>
+			</div>
+		</div>
+	    <br>
+	    <div class="row slideanim">
+			<div class="col-sm-6">
+				<span class="glyphicon glyphicon-user logo-small"></span>
+				<h4>PUTRA</h4>
+				<p>Universitas Sulawesi</p>
+			</div>
+			<div class="col-sm-6">
+				<span class="glyphicon glyphicon-user logo-small"></span>
+				<h4>PUTRI</h4>
+				<p>Universitas Kepulauan Nusa, Maluku dan Papua</p>
+			</div>
+	    </div>
+	</div>
+
+	<!-- Footer -->
+	<footer class="container-fluid text-center">
+		<a href="#halamanku" title="To Top">
+			<span class="glyphicon glyphicon-chevron-up"></span>
+		</a>
+		<p>Orbit Future Academy <br> <a href="https://orbitfutureacademy.id/">orbitfutureacademy.id</a></p>
+	</footer>
+
+	<!-- JavaScript untuk Animasi Scroll dan Prediksi Model -->
+	<script  src={{ url_for('static', filename='/js/client_side.js') }}></script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Capture Gambar dengan Kamera</title>
+  </head>
+  <body>
+    <video id="video" width="420" height="240" autoplay></video>
+    <button id="capture">Capture</button>
+    <canvas id="canvas" width="350" height="240"></canvas>
+    <script>
+      var video = document.querySelector("#video");
+      var canvas = document.querySelector("#canvas");
+      var captureButton = document.querySelector("#capture");
+
+      navigator.mediaDevices.getUserMedia({ video: true })
+        .then(function(stream) {
+          video.srcObject = stream;
+        })
+        .catch(function(error) {
+          console.log("Tidak dapat mengakses kamera: " + error.message);
+        });
+
+      captureButton.addEventListener("click", function() {
+        var context = canvas.getContext("2d");
+        context.drawImage(video, 0, 0, canvas.width, canvas.height);
+        var dataUrl = canvas.toDataURL("image/png");
+        // Lakukan sesuatu dengan dataUrl, seperti mengirimkannya ke server atau menampilkannya pada halaman web.
+      });
+    </script>
+  </body>
+</html>
